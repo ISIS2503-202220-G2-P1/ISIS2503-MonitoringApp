@@ -1,4 +1,4 @@
-from monitoring.settings import EMAIL_HOST_USER
+from monitoring.settings import EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
 from django.core.mail import send_mail
 
 def check_alarm(value):
@@ -10,4 +10,4 @@ def send_email():
     subject = 'Test Taller'
     message = 'Warning!!! the temperature is growing'
     recepient = "j.alegria@uniandes.edu.co"
-    send_mail(subject, message, EMAIL_HOST_USER, [recepient])
+    send_mail(subject, message, EMAIL_HOST_USER, [recepient], auth_password=EMAIL_HOST_PASSWORD)
