@@ -4,7 +4,7 @@ from sys import path
 from os import environ
 import django
 
-rabbit_host = 'host'
+rabbit_host = '10.128.0.10'
 rabbit_user = 'monitoring_user'
 rabbit_password = 'isis2503'
 exchange = 'monitoring_measurements'

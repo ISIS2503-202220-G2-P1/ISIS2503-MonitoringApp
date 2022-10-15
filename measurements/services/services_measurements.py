@@ -9,5 +9,5 @@ def check_alarm(value):
 def send_email():
     subject = 'Test Taller'
     message = 'Warning!!! the temperature is growing'
-    recepient = "estudiante@hotmail.com"
+    recepient = "j.alegria@uniandes.edu.co"
     send_mail(subject, message, EMAIL_HOST_USER, [recepient])

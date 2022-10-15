@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'monitoring.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
+        'NAME': 'monitoring_db',
+        'USER': 'monitoring_user',
+        'PASSWORD': 'isis2503',
+        'HOST': '172.21.208.3',
         'PORT': '',
     }
 }
@@ -135,8 +135,8 @@ STATICFILES_DIRS = (
 )
 
 EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.office365.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'arquisoft2019@gmail.com'
+EMAIL_HOST_USER = 'j.alegria@uniandes.edu.co'
 EMAIL_HOST_PASSWORD = 'xxxxxxxxx'
