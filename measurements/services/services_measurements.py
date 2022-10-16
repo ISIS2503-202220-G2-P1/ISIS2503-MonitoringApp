@@ -14,7 +14,7 @@ def send_email():
     send_mail(subject, message, EMAIL_HOST_USER, [recepient], auth_password=EMAIL_HOST_PASSWORD)
 
 def send_email2():
-    subject = 'Test Taller'
-    message = 'Warning!!! the temperature is growing'
-    recepient = "t.acosta@uniandes.edu.co"
-    send_mail(subject, message, EMAIL_HOST_USER, [recepient], auth_password=EMAIL_HOST_PASSWORD)    
+    subject2 = 'Test Taller'
+    message2 = 'Warning!!! the temperature is growing'
+    recepient2 = "t.acosta@uniandes.edu.co"
+    send_mail(subject2, message2, EMAIL_HOST_USER, [recepient2], auth_password=EMAIL_HOST_PASSWORD)    
